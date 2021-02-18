@@ -26,7 +26,7 @@ This repository already contains a sample project to get you started. It contain
   - Fork this repository
   - Clone this repository
   - Create your own Forge Application, make sure to enable Design Automation and Data Management API
-  - On your repo on Github, go to Settings -> Secrets and add client_id, client_secret and bucket_key as enviroment secrets from the Forge app 
+  - On your repo on Github, go to Settings -> Secrets and add client_id and client_secret and bucket_key as enviroment secrets from the Forge app 
   - Use Postman to import Postman collection located at ./remote_tests/revit_tests.postman_collection.json
   - Setup Postman environment variables (see next topic)
   - On Postman, open Request: 03 - Upload App Bundle, go to Body and specify the location of your revit_tests_bundle at .remote_tests/revit_tests.bundle.zip
@@ -40,14 +40,14 @@ This repository already contains a sample project to get you started. It contain
   - After Workitem completed, go to Actions 02 - Test Results Report and fire up the workflow using the results download URL
 
 ## Postman Variables
-| Variable | Initial Value | Current Value |
-| -------- | ------------- | ------------- |
-| client_id | *your_client_id* | *your_client_id* |
-| client_secret | *your_client_secret* | *your_client_secret* |
-| bucket_key | *unique_bucket_key* | *unique_bucket_key* |
-| app_id | revit_tests | revit_tests |
-| app_description | Sample to run Design Automation for Revit Tests | Sample to run Design Automation for Revit Tests |
-| bundle_engine | Autodesk.Revit+2019 | Autodesk.Revit+2019 |
-| bundle_alias | app_tests | app_tests |
-| activity_alias | ac_tests | ac_tests |
-| test_assembly_name | Onbox.Revit.Tests.dll | Onbox.Revit.Tests.dll |
+| Variable | Value |
+| -------- | ------------- |
+| client_id | *your_client_id* |
+| client_secret | *your_client_secret* |
+| bucket_key | *unique_bucket_key* |
+| app_id | revit_tests |
+| app_description | Sample to run Design Automation for Revit Tests |
+| bundle_engine | Autodesk.Revit+2019 |
+| bundle_alias | app_tests |
+| activity_alias | ac_tests |
+| test_assembly_name | Onbox.Revit.Tests.dll |
